@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="estilo.css">
+   
+</head>
+   
+
+    <ul id="navegacao">
+        <li class="home primeiro"> <a href="index.html">Home</a> </li>
+        <li class="sobre"> <a href="sobre.html">Sobre</a> </li>
+        <li class="treinos"> <a href="servicos.html">Treinos</a> </li>
+        <li class="calculador imc"> <a href="calcimc.html">Calcule seu Imc</a> </li>
+        <li class="contato"> <a href="contato.html">Contato</a> </li>
+        <li class="alimentação"> <a href="alimentacao.html"> Alimentação</a> </li>
+    </ul>
+   
+
+<body>
+   <br>
+   <br>
+   
+    <section>
+        
+        <main>
+            <div class="section">
+      
+              <div class="title"> Calculadora de IMC </div>
+      
+              <div class="input">
+                   <input placeholder="Qual é o seu nome?" type="text" id='nome' required="required">
+              </div>
+      
+              <div class="input">
+                <input placeholder="Qual é o seu peso (kg)? Ex: 70" type="number" id='peso' required="required" >
+            </div>
+      
+              <div class="input">
+                  <input  placeholder="Qual é a sua altura (m)? Ex: 1,60"  type="number" id='altura'required="required">
+              </div>
+              
+              <button id='calcular'>Calcular</button>
+      
+              <div class="result" id='resultado'></div>
+      
+              <footer> Atenção! O IMC deve ser interpretado somente por um profissional de saúde. </footer>  
+      
+            </div>
+          </main> 
+      
+    </section>
+
+   
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+    background: rgb(228, 11, 11);
+    font: normal 15pt Arial;
+	background-image: url('imagens/logo.varios.jpg') ;
+}
+header {
+
+    color: rgb(13, 235, 13);
+    text-align: center;
+}
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 700px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(233, 34, 7, 0.363);
+	text-align: center;
+}
+/*Configuração do fundo e tamanho do menu*/
+
+ul  {
+	
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 10000px;
+	background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x;
+	float: left; 
+	
+}
+
+/*Formatação da Li para Colocar menu na horizontal*/
+ul li{
+	
+	float: left; 
+
+}
+/*Formatação dos Links*/
+ul a{
+	display: block;
+	padding: 0 2em; 
+	line-height: 2.3em;
+	text-decoration: none;
+	color: #fff;
+	
+}
+/*Remove o Divisor que está no primeiro link*/
+ul .primeiro a {
+	background:none; 
+}
+/*Efeito deslizar/flutuar(hover) do mouse sob os inks*/
+ul a:hover{
+	color: #e3ecee;
+	background:#cf5b0d;
+}
+/*Deixar o link atual marcado*/
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contato #navegacao .contato a {
+	color: #eaf2f3f6;
+	background:#e67104;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+}
+
+div{
+	padding: 0;
+	width: 50px;
+	width:500px
+
+}
+
+
