@@ -4,7 +4,7 @@ body {
 	background-image: url('imagens/logo.varios.jpg') ;
 }
 header {
-
+	background: white;
     color: rgb(13, 235, 13);
     text-align: center;
 }
@@ -14,7 +14,7 @@ section {
     padding: 15px;
     width: 700px;
     margin: auto;
-    box-shadow: 3px 3px 10px rgba(233, 34, 7, 0.363);
+    box-shadow: 6px 3px 10px rgba(233, 34, 7, 0.363);
 	text-align: center;
 }
 /*Configuração do fundo e tamanho do menu*/

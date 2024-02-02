@@ -1,57 +1,25 @@
-/*function calcular(){
-    let peso = document.getElementById('txta')
-    let altura = document.getElementById('txtp')
-    let res = document.getElementById('txtres')
+function calcular() {
 
-    let p = Number (peso.value)
-    let a = Number (altura.value)
-    let r = Number(res.value)
 
-    let peso = n1
-    let altura = n2
-    let res = r
-
-    let r = n1 / (n2*n2)
-
-  let res = (peso/(altura**2)).toFixed(2);
-}
-
+    let peso = document.getElementById("txtn1").value;
+    let altura = document.getElementById("txtn2").value;
+    let imc = peso / (altura * altura);
+        if (imc <= 18.5) {
+      resultado.innerHTML = `Seu resultado é ${(imc.toFixed(2))}. Seu grau é: Abaixo do Peso.`;
+    }else if (imc > 18.5 && imc <= 24.9) {
+        resultado.innerHTML = `Seu resultado é ${(imc.toFixed(2))}. Seu grau é: Peso Normal.`;
     
-    */
-const calcular = document.getElementById('calcular');
-
-
-function imc () {
-    const nome = document.getElementById('nome').value;
-    const altura = document.getElementById('altura').value;
-    const peso = document.getElementById('peso').value;
-    const resultado = document.getElementById('resultado');
-
-    if (nome !== '' && altura !== '' && peso !== '') {
-
-        const valorIMC = (peso/(altura**2)).toFixed(2);
-        
-        let classificacao = '';
-
-        if (valorIMC < 18.5){
-            classificacao = 'abaixo do peso.';
-        }else if (valorIMC < 25) {
-            classificacao = 'com o peso ideal. Parabéns!';
-        }else if (valorIMC < 30){
-            classificacao = 'levemente acima do peso.';
-        }else if (valorIMC < 35){
-            classificacao = 'com obesidade grau I.';
-        }else if (valorIMC < 40){
-            classificacao = 'com obesidade grau II.';
-        }else {
-            classificacao = 'com obesidade grau III.';
-        }
-
-        resultado.textContent = `Olá, ${nome}! Com ${peso}kg e ${altura}m, seu IMC é ${valorIMC}. Atualmente, você está ${classificacao}`;
-
-    }else {
-        resultado.textContent = 'Para calcular o seu IMC , preencha todos os campos.';
+    }else if (imc >= 25 && imc <= 29.9) {
+        resultado.innerHTML = `Seu resultado é ${(imc.toFixed(2))}. Seu grau é: Sobrepeso.`;
+    }else if (imc >= 30 && imc <= 34.9){
+        resultado.innerHTML = `Seu resultado é ${(imc.toFixed(2))}. Seu grau é: Obesidade Grau I.`;
+    
+    }else if (imc >= 35 && imc <= 39.9){
+        resultado.innerHTML = `Seu resultado é ${(imc.toFixed(2))}. Seu grau é: Obesidade Grau II.`;
+    
     }
-
-}
-calcular.addEventListener('click', imc);
+    else{
+        resultado.innerHTML = `Seu resultado é ${(imc.toFixed(2))}. Seu grau é: Obesidade Grau III.`;
+    
+    }
+    }

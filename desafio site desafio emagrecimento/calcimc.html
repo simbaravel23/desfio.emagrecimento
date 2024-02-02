@@ -23,29 +23,26 @@
    <br>
    <br>
    
-    <section>
-        
-        <main>
-            <div class="section">
+   <header>
+    <h1>Calcule seu IMC </h1>
+</header>
+<section>
+    <div>
+      <p>Peso:<input type="number" id="txtn1"></p> 
+     <p>Altura:<input type="number" id="txtn2"></p>  
+     <p><input type="button" value="calcular" name="calcular" id="button" onclick="calcular()"></p>  
       
-              <div class="title"> Calculadora de IMC </div>
-      
-              <div class="input">
-                   <input placeholder="Qual é o seu nome?" type="text" id='nome' required="required">
-              </div>
-      
-              <div class="input">
-                <input placeholder="Qual é o seu peso (kg)? Ex: 70" type="number" id='peso' required="required" >
-            </div>
-      
-              <div class="input">
-                  <input  placeholder="Qual é a sua altura (m)? Ex: 1,60"  type="number" id='altura'required="required">
-              </div>
-              
-              <button id='calcular'>Calcular</button>
-      
-              <div class="result" id='resultado'></div>
-      
+    </div>
+
+
+    <h3>Resultado:</h3>
+  <span id="resultado"></span>
+    <br>
+   
+</section>
+<footer>
+    <p>&copy; Ravel Silva</p>
+</footer>
               <footer> Atenção! O IMC deve ser interpretado somente por um profissional de saúde. </footer>  
       
             </div>
